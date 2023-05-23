@@ -6,39 +6,39 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "Repository",
+    name: "repository",
     message: "Let's give your repository a name, shall we?",
   },
   {
     type: "input",
-    name: "Description",
+    name: "description",
     message: "Now let's describe this project we're working on.",
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     message:
       "What are the steps required to install our project? Provide a step-by-step insstructions.",
   },
   {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message:
       "Okay, now provide instructions and examples for use. Include screenshots as needed!",
   },
   {
     type: "input",
-    name: "Contribution",
+    name: "contribution",
     message: "So what are the guidelines for contributing to our project?",
   },
   {
     type: "input",
-    name: "Test",
+    name: "test",
     message: "What are the test instructions for our project?",
   },
   {
     type: "list",
-    name: "License",
+    name: "license",
     message: "What type of license should we include?",
     choices: [
       "MIT License",
@@ -48,12 +48,12 @@ const questions = [
   },
   {
     type: "input",
-    name: "Username",
+    name: "username",
     message: "What is your GitHub username?",
   },
   {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "What is your email address?",
   },
 ];
