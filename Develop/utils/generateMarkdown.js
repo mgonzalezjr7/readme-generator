@@ -31,7 +31,19 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "MIT") {
+    return "This project is covered under the MIT License."
+    } else if (license === "GNU GPLv3") {
+      return "This project is covered under the GNU General Public License v3."
+      } else if (license === "Apache 2.0") {
+        return "This project is covered under the Apache License 2.0."
+        } else if (license === "Boost") {
+          return "This project is covered under the Boost Software License 1.0."
+          } else if (license === "None") {
+            return ""
+            }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
