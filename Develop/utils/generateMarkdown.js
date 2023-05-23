@@ -13,10 +13,21 @@ function renderLicenseBadge(license) {
             return ""
             }
 }
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === "MIT") {
+    return "https://opensource.org/licenses/MIT"
+    } else if (license === "GNU GPLv3") {
+      return "https://www.gnu.org/licenses/gpl-3.0"
+      } else if (license === "Apache 2.0") {
+        return "https://opensource.org/licenses/Apache-2.0"
+        } else if (license === "Boost") {
+          return "https://www.boost.org/LICENSE_1_0.txt"
+          } else if (license === "None") {
+            return ""
+            }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
